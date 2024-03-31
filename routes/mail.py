@@ -89,7 +89,7 @@ async def verifyEmailOtp(otp:Otp):
     except Exception as e:
         return JSONResponse(content={
                 "message":str(e),
-                "status":"failute",
+                "status":"failure",
                 "isError":True
             })
 

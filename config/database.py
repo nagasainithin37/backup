@@ -8,3 +8,7 @@ db=client.major
 usersCollection=db["users"]
 
 otpCollection=db["otp"]
+
+imageCollection=db["image"]
+
+transactionCollection=db['transaction']

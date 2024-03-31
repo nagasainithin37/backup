@@ -3,6 +3,8 @@ from fastapi import FastAPI
 from routes.auth import authRoute
 from routes.mail import mailRoute
 from routes.bot import botRoute
+from routes.transactions import transactionRoute
+from routes.face import face
 # from telegram.ext import *
 from fastapi.middleware.cors import CORSMiddleware
 # import Constants as keys
@@ -20,7 +22,8 @@ app.add_middleware(
 app.include_router(authRoute)
 app.include_router(mailRoute)
 app.include_router(botRoute)
-
+app.include_router(face)
+app.include_router(transactionRoute)
 
 # token="6530501862:AAHn2PpBLrAy-LgZJZFXz8OdoSRK62_-HJM"
 
