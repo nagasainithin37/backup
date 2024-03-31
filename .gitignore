@@ -1,4 +1,4 @@
 /bot/node_modules/
 /routes/__pycache__/
-/models/
+/models/__pycache__/
 /__pycache__/
